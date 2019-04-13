@@ -1,0 +1,85 @@
+.AccountBook {
+  padding-top: 5em;
+}
+
+.AccountBook-header {
+  background-color: #fff;
+  border-bottom: 1px solid darkgray;
+  left: 0;
+  padding: 1em 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.AccountBook-form {
+  display: flex;
+  height: 2em;
+  line-height: 2em;
+}
+
+.AccountBook-add,
+.AccountBook-update {
+  display: none;
+}
+
+.AccountBook-form[data-new="true"] .AccountBook-add,
+.AccountBook-form[data-new="false"] .AccountBook-update {
+  display: inline-block;
+}
+
+.AccountBook-amountPrefix {
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: -2em;
+  position: relative;
+  text-align: right;
+  width: 2em;
+  z-index: 1;
+}
+
+.AccountBook-dateInput,
+.AccountBook-amountInput,
+.AccountBook-categoryInput,
+.AccountBook-add,
+.AccountBook-update,
+.AccountBook-cancel {
+  /* height: 2em; */
+  /* padding: 0 0.5em; */
+  margin-right: 0.5em;
+}
+
+.AccountBook-amountInput {
+  text-align: right;
+}
+
+.AccountBook-body {
+  margin-bottom: 1em;
+}
+
+.AccountBook-table {
+  border-collapse: collapse;
+  margin: auto;
+  width: 100%;
+}
+
+.AccountBook-table > thead > tr > th,
+.AccountBook-table > tbody > tr > td {
+  border: 1px solid lightgray;
+  padding: 0.2em 1em;
+}
+
+.AccountBook-amountCell {
+  min-width: 5em;
+}
+td.AccountBook-amountCell {
+  text-align: right;
+}
+
+.AccountBook-categoryCell {
+  min-width: 10em;
+}
+
+.AccountBook-add {
+  display: none;
+}
